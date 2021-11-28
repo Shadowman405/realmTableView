@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD7999E20BE98060AE2E8AE /* Pods_realmTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA6AC44A7988D2F7BE31E14 /* Pods_realmTableView.framework */; };
 		BF67B4842753D3D6000CCF93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67B4832753D3D6000CCF93 /* AppDelegate.swift */; };
 		BF67B4862753D3D6000CCF93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67B4852753D3D6000CCF93 /* SceneDelegate.swift */; };
-		BF67B4882753D3D6000CCF93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67B4872753D3D6000CCF93 /* ViewController.swift */; };
+		BF67B4882753D3D6000CCF93 /* TableViewControllerNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67B4872753D3D6000CCF93 /* TableViewControllerNotes.swift */; };
 		BF67B48B2753D3D6000CCF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67B4892753D3D6000CCF93 /* Main.storyboard */; };
 		BF67B48D2753D3E0000CCF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF67B48C2753D3E0000CCF93 /* Assets.xcassets */; };
 		BF67B4902753D3E0000CCF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67B48E2753D3E0000CCF93 /* LaunchScreen.storyboard */; };
+		BF67B4982753D66B000CCF93 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67B4972753D66B000CCF93 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CA6AC44A7988D2F7BE31E14 /* Pods_realmTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realmTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E51DB4D4727F94D8B14FAE /* Pods-realmTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realmTableView.release.xcconfig"; path = "Target Support Files/Pods-realmTableView/Pods-realmTableView.release.xcconfig"; sourceTree = "<group>"; };
+		701D4C5AE76F208B7F874B82 /* Pods-realmTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realmTableView.debug.xcconfig"; path = "Target Support Files/Pods-realmTableView/Pods-realmTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		BF67B4802753D3D6000CCF93 /* realmTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realmTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF67B4832753D3D6000CCF93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF67B4852753D3D6000CCF93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF67B4872753D3D6000CCF93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF67B4872753D3D6000CCF93 /* TableViewControllerNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerNotes.swift; sourceTree = "<group>"; };
 		BF67B48A2753D3D6000CCF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF67B48C2753D3E0000CCF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF67B48F2753D3E0000CCF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF67B4912753D3E0000CCF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF67B4972753D66B000CCF93 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD7999E20BE98060AE2E8AE /* Pods_realmTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0492F26A30D1DAFDACA1105D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				701D4C5AE76F208B7F874B82 /* Pods-realmTableView.debug.xcconfig */,
+				54E51DB4D4727F94D8B14FAE /* Pods-realmTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF67B4772753D3D6000CCF93 = {
 			isa = PBXGroup;
 			children = (
 				BF67B4822753D3D6000CCF93 /* realmTableView */,
 				BF67B4812753D3D6000CCF93 /* Products */,
+				0492F26A30D1DAFDACA1105D /* Pods */,
+				FEA5F909A34C4C1E31A1CFD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,24 @@
 		BF67B4822753D3D6000CCF93 /* realmTableView */ = {
 			isa = PBXGroup;
 			children = (
+				BF67B4972753D66B000CCF93 /* Item.swift */,
 				BF67B4832753D3D6000CCF93 /* AppDelegate.swift */,
 				BF67B4852753D3D6000CCF93 /* SceneDelegate.swift */,
-				BF67B4872753D3D6000CCF93 /* ViewController.swift */,
+				BF67B4872753D3D6000CCF93 /* TableViewControllerNotes.swift */,
 				BF67B4892753D3D6000CCF93 /* Main.storyboard */,
 				BF67B48C2753D3E0000CCF93 /* Assets.xcassets */,
 				BF67B48E2753D3E0000CCF93 /* LaunchScreen.storyboard */,
 				BF67B4912753D3E0000CCF93 /* Info.plist */,
 			);
 			path = realmTableView;
+			sourceTree = "<group>";
+		};
+		FEA5F909A34C4C1E31A1CFD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CA6AC44A7988D2F7BE31E14 /* Pods_realmTableView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF67B4942753D3E0000CCF93 /* Build configuration list for PBXNativeTarget "realmTableView" */;
 			buildPhases = (
+				EBEDE1CCA2BEE84EEC513B2C /* [CP] Check Pods Manifest.lock */,
 				BF67B47C2753D3D6000CCF93 /* Sources */,
 				BF67B47D2753D3D6000CCF93 /* Frameworks */,
 				BF67B47E2753D3D6000CCF93 /* Resources */,
+				4CA36A4835F5A15873009335 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +161,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CA36A4835F5A15873009335 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realmTableView/Pods-realmTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realmTableView/Pods-realmTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-realmTableView/Pods-realmTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBEDE1CCA2BEE84EEC513B2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realmTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF67B47C2753D3D6000CCF93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF67B4882753D3D6000CCF93 /* ViewController.swift in Sources */,
+				BF67B4982753D66B000CCF93 /* Item.swift in Sources */,
+				BF67B4882753D3D6000CCF93 /* TableViewControllerNotes.swift in Sources */,
 				BF67B4842753D3D6000CCF93 /* AppDelegate.swift in Sources */,
 				BF67B4862753D3D6000CCF93 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +355,7 @@
 		};
 		BF67B4952753D3E0000CCF93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701D4C5AE76F208B7F874B82 /* Pods-realmTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		BF67B4962753D3E0000CCF93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E51DB4D4727F94D8B14FAE /* Pods-realmTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
