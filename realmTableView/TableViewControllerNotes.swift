@@ -18,7 +18,7 @@ class TableViewControllerNotes: UITableViewController {
         // Do any additional setup after loading the view.
         do {
             let realm = try Realm()
-            items = realm.objects(Item.self)
+            items = realm.objects(Item.self).filter("id <= 3")
         } catch {
             print("eroor")
         }
@@ -31,7 +31,8 @@ class TableViewControllerNotes: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellNotes")
-        let name = items[indexPath.row].name
+        let item = items[indexPath.row]
+        let name = "\(item.name), id: \(item.id)"
         cell?.textLabel?.text = name
         
         return cell!
@@ -56,6 +57,7 @@ class TableViewControllerNotes: UITableViewController {
     @IBAction func addClicked(_ sender: Any) {
         let item = Item()
         item.name = "Item \(items.count + 1)"
+        item.id = items.count + 1
         do {
             let realm = try Realm()
             try realm.write{

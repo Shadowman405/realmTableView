@@ -11,5 +11,5 @@ import RealmSwift
 class Item: Object {
     
     @objc dynamic var name: String = ""
-    
+    @objc dynamic var id: Int = 0
 }
